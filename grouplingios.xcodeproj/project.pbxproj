@@ -1,0 +1,582 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FC53E53728677FAA00B05E46 /* grouplingiosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC53E53628677FAA00B05E46 /* grouplingiosApp.swift */; };
+		FC53E53928677FAA00B05E46 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC53E53828677FAA00B05E46 /* ContentView.swift */; };
+		FC53E53B28677FAF00B05E46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC53E53A28677FAF00B05E46 /* Assets.xcassets */; };
+		FC53E53E28677FAF00B05E46 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC53E53D28677FAF00B05E46 /* Preview Assets.xcassets */; };
+		FC53E54828677FAF00B05E46 /* grouplingiosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC53E54728677FAF00B05E46 /* grouplingiosTests.swift */; };
+		FC53E55228677FAF00B05E46 /* grouplingiosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC53E55128677FAF00B05E46 /* grouplingiosUITests.swift */; };
+		FC53E55428677FAF00B05E46 /* grouplingiosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC53E55328677FAF00B05E46 /* grouplingiosUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FC53E54428677FAF00B05E46 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FC53E52B28677FAA00B05E46 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FC53E53228677FAA00B05E46;
+			remoteInfo = grouplingios;
+		};
+		FC53E54E28677FAF00B05E46 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FC53E52B28677FAA00B05E46 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FC53E53228677FAA00B05E46;
+			remoteInfo = grouplingios;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FC53E53328677FAA00B05E46 /* grouplingios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = grouplingios.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC53E53628677FAA00B05E46 /* grouplingiosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = grouplingiosApp.swift; sourceTree = "<group>"; };
+		FC53E53828677FAA00B05E46 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FC53E53A28677FAF00B05E46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FC53E53D28677FAF00B05E46 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FC53E54328677FAF00B05E46 /* grouplingiosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = grouplingiosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC53E54728677FAF00B05E46 /* grouplingiosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = grouplingiosTests.swift; sourceTree = "<group>"; };
+		FC53E54D28677FAF00B05E46 /* grouplingiosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = grouplingiosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC53E55128677FAF00B05E46 /* grouplingiosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = grouplingiosUITests.swift; sourceTree = "<group>"; };
+		FC53E55328677FAF00B05E46 /* grouplingiosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = grouplingiosUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FC53E53028677FAA00B05E46 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC53E54028677FAF00B05E46 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC53E54A28677FAF00B05E46 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FC53E52A28677FAA00B05E46 = {
+			isa = PBXGroup;
+			children = (
+				FC53E53528677FAA00B05E46 /* grouplingios */,
+				FC53E54628677FAF00B05E46 /* grouplingiosTests */,
+				FC53E55028677FAF00B05E46 /* grouplingiosUITests */,
+				FC53E53428677FAA00B05E46 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FC53E53428677FAA00B05E46 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FC53E53328677FAA00B05E46 /* grouplingios.app */,
+				FC53E54328677FAF00B05E46 /* grouplingiosTests.xctest */,
+				FC53E54D28677FAF00B05E46 /* grouplingiosUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FC53E53528677FAA00B05E46 /* grouplingios */ = {
+			isa = PBXGroup;
+			children = (
+				FC53E53628677FAA00B05E46 /* grouplingiosApp.swift */,
+				FC53E53828677FAA00B05E46 /* ContentView.swift */,
+				FC53E53A28677FAF00B05E46 /* Assets.xcassets */,
+				FC53E53C28677FAF00B05E46 /* Preview Content */,
+			);
+			path = grouplingios;
+			sourceTree = "<group>";
+		};
+		FC53E53C28677FAF00B05E46 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FC53E53D28677FAF00B05E46 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FC53E54628677FAF00B05E46 /* grouplingiosTests */ = {
+			isa = PBXGroup;
+			children = (
+				FC53E54728677FAF00B05E46 /* grouplingiosTests.swift */,
+			);
+			path = grouplingiosTests;
+			sourceTree = "<group>";
+		};
+		FC53E55028677FAF00B05E46 /* grouplingiosUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FC53E55128677FAF00B05E46 /* grouplingiosUITests.swift */,
+				FC53E55328677FAF00B05E46 /* grouplingiosUITestsLaunchTests.swift */,
+			);
+			path = grouplingiosUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FC53E53228677FAA00B05E46 /* grouplingios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC53E55728677FAF00B05E46 /* Build configuration list for PBXNativeTarget "grouplingios" */;
+			buildPhases = (
+				FC53E52F28677FAA00B05E46 /* Sources */,
+				FC53E53028677FAA00B05E46 /* Frameworks */,
+				FC53E53128677FAA00B05E46 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = grouplingios;
+			productName = grouplingios;
+			productReference = FC53E53328677FAA00B05E46 /* grouplingios.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FC53E54228677FAF00B05E46 /* grouplingiosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC53E55A28677FAF00B05E46 /* Build configuration list for PBXNativeTarget "grouplingiosTests" */;
+			buildPhases = (
+				FC53E53F28677FAF00B05E46 /* Sources */,
+				FC53E54028677FAF00B05E46 /* Frameworks */,
+				FC53E54128677FAF00B05E46 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FC53E54528677FAF00B05E46 /* PBXTargetDependency */,
+			);
+			name = grouplingiosTests;
+			productName = grouplingiosTests;
+			productReference = FC53E54328677FAF00B05E46 /* grouplingiosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FC53E54C28677FAF00B05E46 /* grouplingiosUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC53E55D28677FAF00B05E46 /* Build configuration list for PBXNativeTarget "grouplingiosUITests" */;
+			buildPhases = (
+				FC53E54928677FAF00B05E46 /* Sources */,
+				FC53E54A28677FAF00B05E46 /* Frameworks */,
+				FC53E54B28677FAF00B05E46 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FC53E54F28677FAF00B05E46 /* PBXTargetDependency */,
+			);
+			name = grouplingiosUITests;
+			productName = grouplingiosUITests;
+			productReference = FC53E54D28677FAF00B05E46 /* grouplingiosUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FC53E52B28677FAA00B05E46 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					FC53E53228677FAA00B05E46 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					FC53E54228677FAF00B05E46 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = FC53E53228677FAA00B05E46;
+					};
+					FC53E54C28677FAF00B05E46 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = FC53E53228677FAA00B05E46;
+					};
+				};
+			};
+			buildConfigurationList = FC53E52E28677FAA00B05E46 /* Build configuration list for PBXProject "grouplingios" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FC53E52A28677FAA00B05E46;
+			productRefGroup = FC53E53428677FAA00B05E46 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FC53E53228677FAA00B05E46 /* grouplingios */,
+				FC53E54228677FAF00B05E46 /* grouplingiosTests */,
+				FC53E54C28677FAF00B05E46 /* grouplingiosUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FC53E53128677FAA00B05E46 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC53E53E28677FAF00B05E46 /* Preview Assets.xcassets in Resources */,
+				FC53E53B28677FAF00B05E46 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC53E54128677FAF00B05E46 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC53E54B28677FAF00B05E46 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FC53E52F28677FAA00B05E46 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC53E53928677FAA00B05E46 /* ContentView.swift in Sources */,
+				FC53E53728677FAA00B05E46 /* grouplingiosApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC53E53F28677FAF00B05E46 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC53E54828677FAF00B05E46 /* grouplingiosTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC53E54928677FAF00B05E46 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC53E55428677FAF00B05E46 /* grouplingiosUITestsLaunchTests.swift in Sources */,
+				FC53E55228677FAF00B05E46 /* grouplingiosUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FC53E54528677FAF00B05E46 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FC53E53228677FAA00B05E46 /* grouplingios */;
+			targetProxy = FC53E54428677FAF00B05E46 /* PBXContainerItemProxy */;
+		};
+		FC53E54F28677FAF00B05E46 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FC53E53228677FAA00B05E46 /* grouplingios */;
+			targetProxy = FC53E54E28677FAF00B05E46 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FC53E55528677FAF00B05E46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FC53E55628677FAF00B05E46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FC53E55828677FAF00B05E46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"grouplingios/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lizwait.grouplingios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FC53E55928677FAF00B05E46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"grouplingios/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lizwait.grouplingios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FC53E55B28677FAF00B05E46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lizwait.grouplingiosTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/grouplingios.app/grouplingios";
+			};
+			name = Debug;
+		};
+		FC53E55C28677FAF00B05E46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lizwait.grouplingiosTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/grouplingios.app/grouplingios";
+			};
+			name = Release;
+		};
+		FC53E55E28677FAF00B05E46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lizwait.grouplingiosUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = grouplingios;
+			};
+			name = Debug;
+		};
+		FC53E55F28677FAF00B05E46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lizwait.grouplingiosUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = grouplingios;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FC53E52E28677FAA00B05E46 /* Build configuration list for PBXProject "grouplingios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC53E55528677FAF00B05E46 /* Debug */,
+				FC53E55628677FAF00B05E46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC53E55728677FAF00B05E46 /* Build configuration list for PBXNativeTarget "grouplingios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC53E55828677FAF00B05E46 /* Debug */,
+				FC53E55928677FAF00B05E46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC53E55A28677FAF00B05E46 /* Build configuration list for PBXNativeTarget "grouplingiosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC53E55B28677FAF00B05E46 /* Debug */,
+				FC53E55C28677FAF00B05E46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC53E55D28677FAF00B05E46 /* Build configuration list for PBXNativeTarget "grouplingiosUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC53E55E28677FAF00B05E46 /* Debug */,
+				FC53E55F28677FAF00B05E46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FC53E52B28677FAA00B05E46 /* Project object */;
+}
