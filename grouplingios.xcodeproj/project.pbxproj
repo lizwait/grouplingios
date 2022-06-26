@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC0332DA2869164C0007456D /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0332D92869164C0007456D /* Color.swift */; };
 		FC53E53728677FAA00B05E46 /* grouplingiosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC53E53628677FAA00B05E46 /* grouplingiosApp.swift */; };
 		FC53E53928677FAA00B05E46 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC53E53828677FAA00B05E46 /* ContentView.swift */; };
 		FC53E53B28677FAF00B05E46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC53E53A28677FAF00B05E46 /* Assets.xcassets */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FC0332D92869164C0007456D /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		FC53E53328677FAA00B05E46 /* grouplingios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = grouplingios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC53E53628677FAA00B05E46 /* grouplingiosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = grouplingiosApp.swift; sourceTree = "<group>"; };
 		FC53E53828677FAA00B05E46 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -71,6 +73,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FC0332D8286915F20007456D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FC0332D92869164C0007456D /* Color.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		FC53E52A28677FAA00B05E46 = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +104,7 @@
 		FC53E53528677FAA00B05E46 /* grouplingios */ = {
 			isa = PBXGroup;
 			children = (
+				FC0332D8286915F20007456D /* Extensions */,
 				FC53E53628677FAA00B05E46 /* grouplingiosApp.swift */,
 				FC53E53828677FAA00B05E46 /* ContentView.swift */,
 				FC53E53A28677FAF00B05E46 /* Assets.xcassets */,
@@ -257,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC0332DA2869164C0007456D /* Color.swift in Sources */,
 				FC53E53928677FAA00B05E46 /* ContentView.swift in Sources */,
 				FC53E53728677FAA00B05E46 /* grouplingiosApp.swift in Sources */,
 			);
@@ -422,6 +434,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -430,10 +443,10 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.lizwait.grouplingios;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = grouplingios;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -450,6 +463,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -458,10 +472,10 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.lizwait.grouplingios;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = grouplingios;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
