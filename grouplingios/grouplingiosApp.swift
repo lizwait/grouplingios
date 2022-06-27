@@ -11,7 +11,7 @@ import SwiftUI
 struct grouplingiosApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomepageView()
         }
     }
 }
