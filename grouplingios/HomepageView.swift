@@ -14,35 +14,40 @@ struct HomepageView: View {
                 .ignoresSafeArea()
             
             VStack {
-                ZStack {
-                    Image("GrouplingLogo")
+                VStack(alignment: .trailing) {
+                    Image.image.mulleticon
                         .resizable()
-                        .aspectRatio(contentMode: .fit)
-                    ZStack {
-                        Rectangle()
-                            .fill(Color.theme.grey)
-                            .frame(width: 400, height: 350)
-                    }
+                        .frame(width: 40, height: 40)
                 }
-                
-                ZStack {
-                    Rectangle()
-                        .fill(Color.theme.grey)
-                        .frame(width: 400, height: 250)
-                    
                     VStack {
-                    Text("New to Groupling?")
-                        .fontWeight(.semibold)
-                        .font(.system(.title, design: .rounded))
-                    Button {}
-                        label: {
-                            Text("create group")
-                                .padding(10)
+                            ZStack {
+                                Rectangle()
+                                    .fill(Color.theme.grey)
+                                    .frame(width: 400, height: 350)
+                                Image.image.grouplinglogo
+                                    .resizable()
+                                    .frame(width: 350, height: 350)
+                            }
+                        
+                        ZStack {
+                            Rectangle()
+                                .fill(Color.theme.grey)
+                                .frame(width: 400, height: 250)
                             
+                            VStack(spacing: 65) {
+                            Text("New to Groupling?")
+                                .fontWeight(.semibold)
+                                .font(.system(.largeTitle, design: .rounded))
+                            Button {}
+                                label: {
+                                    Text("create group")
+                                        .padding(10)
+                                    
+                                }
+                            }
                         }
                     }
                 }
-            }
         }
     }
 }
