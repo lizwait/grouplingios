@@ -12,6 +12,7 @@ struct grouplingiosApp: App {
     var body: some Scene {
         WindowGroup {
             HomepageView()
+            NewGroupView()
         }
     }
 }

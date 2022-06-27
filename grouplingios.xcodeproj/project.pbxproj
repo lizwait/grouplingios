@@ -10,6 +10,7 @@
 		FC0332DA2869164C0007456D /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0332D92869164C0007456D /* Color.swift */; };
 		FC0332DC28691E030007456D /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0332DB28691E030007456D /* Images.swift */; };
 		FC0332E228693ED40007456D /* HomepageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0332E128693ED40007456D /* HomepageView.swift */; };
+		FC0332E4286A444C0007456D /* NewGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0332E3286A444C0007456D /* NewGroupView.swift */; };
 		FC53E53728677FAA00B05E46 /* grouplingiosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC53E53628677FAA00B05E46 /* grouplingiosApp.swift */; };
 		FC53E53B28677FAF00B05E46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC53E53A28677FAF00B05E46 /* Assets.xcassets */; };
 		FC53E53E28677FAF00B05E46 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC53E53D28677FAF00B05E46 /* Preview Assets.xcassets */; };
@@ -39,6 +40,7 @@
 		FC0332D92869164C0007456D /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		FC0332DB28691E030007456D /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		FC0332E128693ED40007456D /* HomepageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageView.swift; sourceTree = "<group>"; };
+		FC0332E3286A444C0007456D /* NewGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGroupView.swift; sourceTree = "<group>"; };
 		FC53E53328677FAA00B05E46 /* grouplingios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = grouplingios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC53E53628677FAA00B05E46 /* grouplingiosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = grouplingiosApp.swift; sourceTree = "<group>"; };
 		FC53E53A28677FAF00B05E46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 				FC0332D8286915F20007456D /* Extensions */,
 				FC53E53628677FAA00B05E46 /* grouplingiosApp.swift */,
 				FC0332E128693ED40007456D /* HomepageView.swift */,
+				FC0332E3286A444C0007456D /* NewGroupView.swift */,
 				FC53E53A28677FAF00B05E46 /* Assets.xcassets */,
 				FC53E53C28677FAF00B05E46 /* Preview Content */,
 			);
@@ -271,6 +274,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC0332E4286A444C0007456D /* NewGroupView.swift in Sources */,
 				FC0332DA2869164C0007456D /* Color.swift in Sources */,
 				FC0332DC28691E030007456D /* Images.swift in Sources */,
 				FC0332E228693ED40007456D /* HomepageView.swift in Sources */,
