@@ -22,7 +22,7 @@ struct HomepageView: View {
                     VStack {
                             ZStack {
                                 Rectangle()
-                                    .fill(Color.theme.grey)
+                                    .fill(Color.theme.secondarybackground)
                                     .frame(width: 400, height: 350)
                                 Image.image.grouplinglogo
                                     .resizable()
@@ -31,7 +31,7 @@ struct HomepageView: View {
                         
                         ZStack {
                             Rectangle()
-                                .fill(Color.theme.grey)
+                                .fill(Color.theme.secondarybackground)
                                 .frame(width: 400, height: 250)
                             
                             VStack(spacing: 65) {
@@ -47,7 +47,7 @@ struct HomepageView: View {
                             }
                         }
                     }
-                }
+            }
         }
     }
 }

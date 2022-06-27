@@ -10,16 +10,28 @@ import SwiftUI
 
 extension Color {
     
-    static let theme = ColorTheme()
+    static let theme = DefaultColorTheme()
     
 }
 
-struct ColorTheme {
+struct DefaultColorTheme {
     
     let accent = Color("AccentColor")
-    let black = Color("Black")
-    let grey = Color("Grey")
+    let primarytext = Color("Text")
     let background = Color("Background")
-    let white = Color("White")
+    let secondarybackground = Color("Grey")
+    let bright = Color("White")
+    let optional = Color("Blue")
+    
+}
+
+struct PartyColorTheme {
+    
+    let accent = Color("PartyAccentColor")
+    let primarytext = Color("PartyText")
+    let background = Color("PartyBackground")
+    let secondarybackground = Color("PartyPurple")
+    let bright = Color ("PartyGold")
+    let optional = Color("Blue")
     
 }
