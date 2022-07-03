@@ -43,6 +43,7 @@ struct NewGroupView: View {
                             }
                         }
                         .padding(.trailing, 25)
+                        
                     }
                     
                     VStack {
@@ -50,19 +51,23 @@ struct NewGroupView: View {
                             Rectangle()
                                 .fill(Color.theme.secondarybackground)
                                 .frame(height: 350)
+                            
                             VStack {
                                 Text("Group Title")
                                     .frame(maxWidth: .infinity, alignment: .leading)
                                     .font(.system(size: 20, weight: .bold, design: .rounded))
                                     .padding()
+                                
                                 TextField("", text: $groupTitle)
                                     .background()
                                     .padding(.trailing, 20)
                                     .padding(.leading, 20)
+                                
                                 Text("Group Description")
                                     .frame(maxWidth: .infinity, alignment: .leading)
                                     .font(.system(size: 20, weight: .bold, design: .rounded))
                                     .padding()
+                                
                                 TextEditor(text: $groupDescription)
                                     .background()
                                     .padding(.trailing, 20)
@@ -73,6 +78,7 @@ struct NewGroupView: View {
                             .cornerRadius(6)
                             .font(.system(size: 15, weight: .semibold, design: .rounded))
                         }
+                        
                         Spacer()
                         
                         VStack {
@@ -80,28 +86,36 @@ struct NewGroupView: View {
                                 Rectangle()
                                     .fill(Color.theme.secondarybackground)
                                     .frame(height: 600)
+                                
                                 VStack {
                                     Text("Members")
                                         .frame(maxWidth: .infinity, alignment: .center)
                                         .font(.system(size: 20, weight: .bold, design: .rounded))
                                         .padding()
+                                    
                                     TextField("First Name", text: $firstName)
                                         .background()
+                                    
                                     TextField("Last Name", text: $lastName)
                                         .background()
+                                    
                                     TextField("Phone Number", text: $memberPhone)
                                         .background()
+                                    
                                     TextField("Email", text: $memberEmail)
                                         .background()
+                                    
                                     Text("Member Specific Notes")
                                         .frame(maxWidth: .infinity, alignment: .leading)
                                         .padding(.top, 15)
                                         .font(.system(size: 18, weight: .semibold, design: .rounded))
+                                    
                                     TextEditor(text: $groupDescription)
                                         .background()
                                         .padding(.bottom)
                                         .textFieldStyle(.roundedBorder)
                                         .cornerRadius(6)
+                                    
                                     Button {}
                                 label: {
                                     Text("add member to group")
@@ -113,7 +127,9 @@ struct NewGroupView: View {
                                         .padding(.top, 10)
                                         .padding(.bottom)
                                 }
+                                    
                                     Divider()
+                                    
                                     Text("Member List")
                                         .frame(maxWidth: .infinity, alignment: .leading)
                                         .font(.system(size: 20, weight: .bold, design: .rounded))
@@ -126,21 +142,28 @@ struct NewGroupView: View {
                                 .font(.system(size: 15, weight: .semibold, design: .rounded))
                             }
                         }
+                        
                         Spacer()
+                        
                         ZStack {
                             Rectangle()
                                 .fill(Color.theme.secondarybackground)
                                 .frame(height:480)
+                            
                             VStack {
                                 Text("Places")
                                     .frame(maxWidth: .infinity, alignment: .center)
                                     .font(.system(size: 20, weight: .bold, design: .rounded))
                                     .padding()
+                                
                                 TextField("Search Places", text: $searchPlaces)
                                     .background()
+                                
                                 Map(coordinateRegion: $region)
                                     .frame(width: 400, height: 300)
+                                
                                 Divider()
+                                
                                 Text("Places List")
                                     .frame(maxWidth: .infinity, alignment: .leading)
                                     .font(.system(size: 20, weight: .bold, design: .rounded))
@@ -152,19 +175,24 @@ struct NewGroupView: View {
                             .cornerRadius(6)
                             .font(.system(size: 15, weight: .semibold, design: .rounded))
                         }
+                        
                         Spacer()
+                        
                         ZStack {
                             Rectangle()
                                 .fill(Color.theme.secondarybackground)
                                 .frame(height:480)
+                            
                             VStack {
                                 Text("Notes")
                                     .frame(maxWidth: .infinity, alignment: .center)
                                     .font(.system(size: 20, weight: .bold, design: .rounded))
                                     .padding()
+                                
                                 TextEditor(text: $groupNotes)
                                     .background()
                                     .padding(.bottom)
+                                
                                 Button {}
                             label: {
                                 Text("add note")
@@ -177,6 +205,7 @@ struct NewGroupView: View {
                                     .padding(.bottom)
                             }
                                 Divider()
+                                
                                 Text("Group Notes")
                                     .frame(maxWidth: .infinity, alignment: .leading)
                                     .font(.system(size: 20, weight: .bold, design: .rounded))
@@ -188,7 +217,39 @@ struct NewGroupView: View {
                             .cornerRadius(6)
                             .font(.system(size: 15, weight: .semibold, design: .rounded))
                         }
+                        
                         Spacer()
+                        
+                        ZStack {
+                            Rectangle()
+                                .fill(Color.theme.bright)
+                                .frame(height:175)
+                            
+                            VStack {
+                                Text("Event PIN")
+                                    .frame(maxWidth: .infinity, alignment: .center)
+                                    .font(.system(size: 20, weight: .bold, design: .rounded))
+                                
+                                Text("299384")
+                                    .frame(maxWidth: .infinity, alignment: .center)
+                                    .font(.system(size: 40, weight: .heavy, design: .rounded))
+                                
+                                Button {}
+                            label: {
+                                Text("copy PIN")
+                                    .padding(10)
+                                    .background(Color.red)
+                                    .font(.system(size: 15, weight: .semibold, design: .rounded))
+                                    .foregroundColor(Color.white)
+                                    .cornerRadius(6)
+                                    .padding(.top, 10)
+                                    .padding(.bottom)
+                            }
+                                
+                            }
+                            
+                            Spacer()
+                        }
                     }
                 }
             }
