@@ -9,12 +9,8 @@ import SwiftUI
 import MapKit
 import CoreData
 
-// TODO: Working button
 struct NewGroupView: View {
     @Environment(\.managedObjectContext) var moc
-//    @FetchRequest(sortDescriptors: [
-//        SortDescriptor(from: \.groupnote)
-//    ]) var newGroupNote: FetchedResults<Group>
     
     @State private var groupTitle = ""
     @State private var groupDescription = ""
@@ -27,6 +23,8 @@ struct NewGroupView: View {
     @State private var searchPlaces = ""
     @State private var groupNotes = ""
     @State private var showingGroupNotes = false
+    @State private var groupNoteArray:[String] = []
+    @State private var showingAlert = false
     @State private var pin = 7
     
     var body: some View {
@@ -44,8 +42,14 @@ struct NewGroupView: View {
             .textFieldStyle(CustomTextFieldStyle())
         }
         .background(Color.theme.background.ignoresSafeArea())
+        .alert(isPresented: $showingAlert) {
+            Alert(
+                title: Text("Group Note field is empty"),
+                message: Text("Please add a Group Note"),
+                dismissButton: .default(Text("Got it!"))
+            )
+        }
     }
-    
     
     @ViewBuilder
     var groupInfoSection: some View {
@@ -173,11 +177,11 @@ struct NewGroupView: View {
                 Spacer()
                 
                 Button {
-                    let newgroupnote = Group(context: moc)
-                    newgroupnote.groupnote = groupNotes
-                    
-                    try? moc.save()
-                    
+                    if $groupNotes.wrappedValue == "" {
+                        showingAlert = true
+                    } else {
+                        groupNoteArray.append(groupNotes)
+                    }
                 } label: {
                     Text("add note")
                         .padding(10)
@@ -196,12 +200,9 @@ struct NewGroupView: View {
                 .font(.system(size: 20, weight: .bold, design: .rounded))
                 .cornerRadius(6)
                 .padding([.top, .leading], 20)
-            HStack(spacing:10) {
-                Text("Count: \(groupNotes.count)")
-                Spacer()
-                Image.image.trashicon
-                    .resizable()
-                    .frame(width: 20, height: 25)
+            //To-do: Add List!
+            ForEach(groupNoteArray, id: \.self) { note in
+                Text(note)
             }
         }
         .padding(.trailing, 20)

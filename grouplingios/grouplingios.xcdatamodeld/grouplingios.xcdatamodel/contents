@@ -2,11 +2,15 @@
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="20086" systemVersion="21F79" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="Group" representedClassName="Group" syncable="YES" codeGenerationType="class">
         <attribute name="groupdescription" optional="YES" attributeType="String"/>
-        <attribute name="groupnote" optional="YES" attributeType="String"/>
         <attribute name="pin" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="title" optional="YES" attributeType="String"/>
+        <relationship name="groupnote" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="GroupNote"/>
+    </entity>
+    <entity name="GroupNote" representedClassName="GroupNote" syncable="YES" codeGenerationType="class">
+        <attribute name="text" optional="YES" attributeType="String"/>
     </entity>
     <elements>
         <element name="Group" positionX="-63" positionY="-18" width="128" height="89"/>
+        <element name="GroupNote" positionX="-54" positionY="18" width="128" height="44"/>
     </elements>
 </model>
