@@ -16,7 +16,7 @@ Groupling is an iOS application that is used to coordinate group trips. Organizi
 - Usability
 - Accessibility
 
-To Dos:
+##To Dos:
 - [ ]  Confirm copy pin pop up on 'Save Group'
 - [ ]  Toast messages
 - [ ]  Add error state
@@ -26,6 +26,7 @@ To Dos:
 - [ ]  Directions icon
 - [x]  reuseable component
 - [ ]  Diagram
+- [ ]  Accessibilty modifiers
 
 
 
