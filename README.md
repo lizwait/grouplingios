@@ -25,6 +25,7 @@ To Dos:
 - [ ]  iPhone directions
 - [ ]  Directions icon
 - [x]  reuseable component
+- [ ]  Diagram
 
 
 
