@@ -20,4 +20,5 @@ struct AppImages {
     let grouplinglogoparty = Image("GrouplingLogoParty")
     let mulleticon = Image("MulletIcon")
     let grouplingicon = Image("GrouplingIcon")
+    let trashicon = Image("TrashIcon")
 }

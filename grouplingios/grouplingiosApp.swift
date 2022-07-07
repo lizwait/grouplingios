@@ -9,10 +9,12 @@ import SwiftUI
 
 @main
 struct grouplingiosApp: App {
+    @StateObject private var dataController = DataController()
+    
     var body: some Scene {
         WindowGroup {
-            HomepageView()
             NewGroupView()
+                .environment(\.managedObjectContext, dataController.container.viewContext)
         }
     }
 }

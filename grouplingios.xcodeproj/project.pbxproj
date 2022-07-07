@@ -7,16 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D9400AE458B59D3F89DDA1D /* Pods_grouplingiosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2852199F1F91478586DB7866 /* Pods_grouplingiosTests.framework */; };
+		AED385F72182C3CA9E22828C /* Pods_grouplingios_grouplingiosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84299EBB0997812620BBABE5 /* Pods_grouplingios_grouplingiosUITests.framework */; };
+		B92D698E3A9265F3DDA1697E /* Pods_grouplingios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F6AB9BDB12C72460D245C9D /* Pods_grouplingios.framework */; };
 		FC0332DA2869164C0007456D /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0332D92869164C0007456D /* Color.swift */; };
 		FC0332DC28691E030007456D /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0332DB28691E030007456D /* Images.swift */; };
 		FC0332E228693ED40007456D /* HomepageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0332E128693ED40007456D /* HomepageView.swift */; };
 		FC0332E4286A444C0007456D /* NewGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0332E3286A444C0007456D /* NewGroupView.swift */; };
+		FC4134B428751D770042C60F /* grouplingios.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FC4134B228751D770042C60F /* grouplingios.xcdatamodeld */; };
+		FC4134B628751EC70042C60F /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4134B528751EC70042C60F /* DataController.swift */; };
+		FC4134C42876796F0042C60F /* CustomTextFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4134C32876796F0042C60F /* CustomTextFieldStyle.swift */; };
 		FC53E53728677FAA00B05E46 /* grouplingiosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC53E53628677FAA00B05E46 /* grouplingiosApp.swift */; };
 		FC53E53B28677FAF00B05E46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC53E53A28677FAF00B05E46 /* Assets.xcassets */; };
 		FC53E53E28677FAF00B05E46 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC53E53D28677FAF00B05E46 /* Preview Assets.xcassets */; };
 		FC53E54828677FAF00B05E46 /* grouplingiosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC53E54728677FAF00B05E46 /* grouplingiosTests.swift */; };
 		FC53E55228677FAF00B05E46 /* grouplingiosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC53E55128677FAF00B05E46 /* grouplingiosUITests.swift */; };
 		FC53E55428677FAF00B05E46 /* grouplingiosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC53E55328677FAF00B05E46 /* grouplingiosUITestsLaunchTests.swift */; };
+		FCBCBEC72872A109006F458A /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBCBEC62872A109006F458A /* Header.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,10 +44,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2852199F1F91478586DB7866 /* Pods_grouplingiosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_grouplingiosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F6AB9BDB12C72460D245C9D /* Pods_grouplingios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_grouplingios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		74EDD72DDF42D29E126669EA /* Pods-grouplingiosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-grouplingiosTests.release.xcconfig"; path = "Target Support Files/Pods-grouplingiosTests/Pods-grouplingiosTests.release.xcconfig"; sourceTree = "<group>"; };
+		7CB124C7912A94C5F3944D87 /* Pods-grouplingios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-grouplingios.debug.xcconfig"; path = "Target Support Files/Pods-grouplingios/Pods-grouplingios.debug.xcconfig"; sourceTree = "<group>"; };
+		84299EBB0997812620BBABE5 /* Pods_grouplingios_grouplingiosUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_grouplingios_grouplingiosUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D1227D540D0EA0E464DDD41 /* Pods-grouplingios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-grouplingios.release.xcconfig"; path = "Target Support Files/Pods-grouplingios/Pods-grouplingios.release.xcconfig"; sourceTree = "<group>"; };
+		94B94BCA028E112D6FC3DFEA /* Pods-grouplingios-grouplingiosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-grouplingios-grouplingiosUITests.release.xcconfig"; path = "Target Support Files/Pods-grouplingios-grouplingiosUITests/Pods-grouplingios-grouplingiosUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B4D009F7E69C6F45D64E8366 /* Pods-grouplingiosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-grouplingiosTests.debug.xcconfig"; path = "Target Support Files/Pods-grouplingiosTests/Pods-grouplingiosTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BA40D88944BD477B2A9CAB38 /* Pods-grouplingios-grouplingiosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-grouplingios-grouplingiosUITests.debug.xcconfig"; path = "Target Support Files/Pods-grouplingios-grouplingiosUITests/Pods-grouplingios-grouplingiosUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		FC0332D92869164C0007456D /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		FC0332DB28691E030007456D /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		FC0332E128693ED40007456D /* HomepageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageView.swift; sourceTree = "<group>"; };
 		FC0332E3286A444C0007456D /* NewGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGroupView.swift; sourceTree = "<group>"; };
+		FC4134B328751D770042C60F /* grouplingios.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = grouplingios.xcdatamodel; sourceTree = "<group>"; };
+		FC4134B528751EC70042C60F /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		FC4134C32876796F0042C60F /* CustomTextFieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextFieldStyle.swift; sourceTree = "<group>"; };
 		FC53E53328677FAA00B05E46 /* grouplingios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = grouplingios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC53E53628677FAA00B05E46 /* grouplingiosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = grouplingiosApp.swift; sourceTree = "<group>"; };
 		FC53E53A28677FAF00B05E46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -50,6 +69,7 @@
 		FC53E54D28677FAF00B05E46 /* grouplingiosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = grouplingiosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC53E55128677FAF00B05E46 /* grouplingiosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = grouplingiosUITests.swift; sourceTree = "<group>"; };
 		FC53E55328677FAF00B05E46 /* grouplingiosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = grouplingiosUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FCBCBEC62872A109006F458A /* Header.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B92D698E3A9265F3DDA1697E /* Pods_grouplingios.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D9400AE458B59D3F89DDA1D /* Pods_grouplingiosTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,12 +93,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AED385F72182C3CA9E22828C /* Pods_grouplingios_grouplingiosUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F2718E3E6E5DE7809744C1E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5F6AB9BDB12C72460D245C9D /* Pods_grouplingios.framework */,
+				84299EBB0997812620BBABE5 /* Pods_grouplingios_grouplingiosUITests.framework */,
+				2852199F1F91478586DB7866 /* Pods_grouplingiosTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C903019F52356EB386472470 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7CB124C7912A94C5F3944D87 /* Pods-grouplingios.debug.xcconfig */,
+				8D1227D540D0EA0E464DDD41 /* Pods-grouplingios.release.xcconfig */,
+				BA40D88944BD477B2A9CAB38 /* Pods-grouplingios-grouplingiosUITests.debug.xcconfig */,
+				94B94BCA028E112D6FC3DFEA /* Pods-grouplingios-grouplingiosUITests.release.xcconfig */,
+				B4D009F7E69C6F45D64E8366 /* Pods-grouplingiosTests.debug.xcconfig */,
+				74EDD72DDF42D29E126669EA /* Pods-grouplingiosTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		FC0332D8286915F20007456D /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +139,8 @@
 				FC53E54628677FAF00B05E46 /* grouplingiosTests */,
 				FC53E55028677FAF00B05E46 /* grouplingiosUITests */,
 				FC53E53428677FAA00B05E46 /* Products */,
+				C903019F52356EB386472470 /* Pods */,
+				3F2718E3E6E5DE7809744C1E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,11 +157,15 @@
 		FC53E53528677FAA00B05E46 /* grouplingios */ = {
 			isa = PBXGroup;
 			children = (
-				FC0332D8286915F20007456D /* Extensions */,
 				FC53E53628677FAA00B05E46 /* grouplingiosApp.swift */,
+				FCBCBEC62872A109006F458A /* Header.swift */,
 				FC0332E128693ED40007456D /* HomepageView.swift */,
 				FC0332E3286A444C0007456D /* NewGroupView.swift */,
+				FC4134C32876796F0042C60F /* CustomTextFieldStyle.swift */,
+				FC4134B528751EC70042C60F /* DataController.swift */,
+				FC4134B228751D770042C60F /* grouplingios.xcdatamodeld */,
 				FC53E53A28677FAF00B05E46 /* Assets.xcassets */,
+				FC0332D8286915F20007456D /* Extensions */,
 				FC53E53C28677FAF00B05E46 /* Preview Content */,
 			);
 			path = grouplingios;
@@ -151,6 +203,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FC53E55728677FAF00B05E46 /* Build configuration list for PBXNativeTarget "grouplingios" */;
 			buildPhases = (
+				A2FC2FAF45790E8788A5BE63 /* [CP] Check Pods Manifest.lock */,
 				FC53E52F28677FAA00B05E46 /* Sources */,
 				FC53E53028677FAA00B05E46 /* Frameworks */,
 				FC53E53128677FAA00B05E46 /* Resources */,
@@ -168,6 +221,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FC53E55A28677FAF00B05E46 /* Build configuration list for PBXNativeTarget "grouplingiosTests" */;
 			buildPhases = (
+				0CF3E4BF8791E1A8B99AE867 /* [CP] Check Pods Manifest.lock */,
 				FC53E53F28677FAF00B05E46 /* Sources */,
 				FC53E54028677FAF00B05E46 /* Frameworks */,
 				FC53E54128677FAF00B05E46 /* Resources */,
@@ -186,6 +240,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FC53E55D28677FAF00B05E46 /* Build configuration list for PBXNativeTarget "grouplingiosUITests" */;
 			buildPhases = (
+				B8FC0F596F4B915F6144E871 /* [CP] Check Pods Manifest.lock */,
 				FC53E54928677FAF00B05E46 /* Sources */,
 				FC53E54A28677FAF00B05E46 /* Frameworks */,
 				FC53E54B28677FAF00B05E46 /* Resources */,
@@ -269,6 +324,75 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0CF3E4BF8791E1A8B99AE867 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-grouplingiosTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A2FC2FAF45790E8788A5BE63 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-grouplingios-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B8FC0F596F4B915F6144E871 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-grouplingios-grouplingiosUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FC53E52F28677FAA00B05E46 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -278,7 +402,11 @@
 				FC0332DA2869164C0007456D /* Color.swift in Sources */,
 				FC0332DC28691E030007456D /* Images.swift in Sources */,
 				FC0332E228693ED40007456D /* HomepageView.swift in Sources */,
+				FCBCBEC72872A109006F458A /* Header.swift in Sources */,
+				FC4134C42876796F0042C60F /* CustomTextFieldStyle.swift in Sources */,
+				FC4134B628751EC70042C60F /* DataController.swift in Sources */,
 				FC53E53728677FAA00B05E46 /* grouplingiosApp.swift in Sources */,
+				FC4134B428751D770042C60F /* grouplingios.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,6 +559,7 @@
 		};
 		FC53E55828677FAF00B05E46 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7CB124C7912A94C5F3944D87 /* Pods-grouplingios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -460,6 +589,7 @@
 		};
 		FC53E55928677FAF00B05E46 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D1227D540D0EA0E464DDD41 /* Pods-grouplingios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -489,6 +619,7 @@
 		};
 		FC53E55B28677FAF00B05E46 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4D009F7E69C6F45D64E8366 /* Pods-grouplingiosTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +639,7 @@
 		};
 		FC53E55C28677FAF00B05E46 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74EDD72DDF42D29E126669EA /* Pods-grouplingiosTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -527,6 +659,7 @@
 		};
 		FC53E55E28677FAF00B05E46 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA40D88944BD477B2A9CAB38 /* Pods-grouplingios-grouplingiosUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -544,6 +677,7 @@
 		};
 		FC53E55F28677FAF00B05E46 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94B94BCA028E112D6FC3DFEA /* Pods-grouplingios-grouplingiosUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -599,6 +733,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FC4134B228751D770042C60F /* grouplingios.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FC4134B328751D770042C60F /* grouplingios.xcdatamodel */,
+			);
+			currentVersion = FC4134B328751D770042C60F /* grouplingios.xcdatamodel */;
+			path = grouplingios.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = FC53E52B28677FAA00B05E46 /* Project object */;
 }
