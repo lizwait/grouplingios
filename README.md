@@ -22,7 +22,7 @@ Groupling is an iOS application that is used to coordinate group trips. Organizi
 - [ ] View Screen
 - [x] Color themes
 - [x] Database
-- [ ] Error State
+- [x] Error State
 - [ ] API
 
 ##Features
@@ -34,7 +34,7 @@ Groupling is an iOS application that is used to coordinate group trips. Organizi
 ##To Dos:
 - [ ]  Confirm copy pin pop up on 'Save Group'
 - [ ]  Toast messages
-- [ ]  Add error state
+- [x]  Add error state
 - [ ]  Email icon
 - [ ]  Cell phone icon
 - [ ]  iPhone directions
