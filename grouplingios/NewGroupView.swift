@@ -11,6 +11,7 @@ import CoreData
 
 struct NewGroupView: View {
     @Environment(\.managedObjectContext) var moc
+    @FetchRequest(sortDescriptors: []) var notes: FetchedResults<GroupNote>
     
     @State private var groupTitle = ""
     @State private var groupDescription = ""
@@ -22,10 +23,11 @@ struct NewGroupView: View {
     @State private var region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 39.099724, longitude: -94.578331), span: MKCoordinateSpan(latitudeDelta: 0.5, longitudeDelta: 0.5))
     @State private var searchPlaces = ""
     @State private var groupNotes = ""
-    @State private var showingGroupNotes = false
-    @State private var groupNoteArray:[String] = []
+//    @State private var showingGroupNotes = false
+//    @State private var groupNoteArray:[String] = []
     @State private var showingAlert = false
     @State private var pin = 7
+    @State private var text = ""
     
     var body: some View {
         ScrollView {
@@ -126,7 +128,8 @@ struct NewGroupView: View {
             
             Text("Member List")
                 .font(.system(size: 20, weight: .bold, design: .rounded))
-                .padding(.leading, 20)
+                .padding(.top, 10)
+                .padding([.leading, .bottom], 20)
         }
         .cornerRadius(6)
         .font(.system(size: 15, weight: .semibold, design: .rounded))
@@ -153,7 +156,8 @@ struct NewGroupView: View {
             
             Text("Places List")
                 .font(.system(size: 20, weight: .bold, design: .rounded))
-                .padding([.top, .leading], 20)
+                .padding(.top, 10)
+                .padding([.leading, .bottom], 20)
         }
         .padding([.leading, .trailing], 20)
         .cornerRadius(6)
@@ -180,7 +184,10 @@ struct NewGroupView: View {
                     if $groupNotes.wrappedValue == "" {
                         showingAlert = true
                     } else {
-                        groupNoteArray.append(groupNotes)
+                        let newGroupNote = GroupNote(context: moc)
+                        newGroupNote.text = $groupNotes.wrappedValue
+                        
+                        try? moc.save()
                     }
                 } label: {
                     Text("add note")
@@ -199,11 +206,13 @@ struct NewGroupView: View {
             Text("Group Notes")
                 .font(.system(size: 20, weight: .bold, design: .rounded))
                 .cornerRadius(6)
-                .padding([.top, .leading], 20)
-            //To-do: Add List!
-            ForEach(groupNoteArray, id: \.self) { note in
-                Text(note)
+                .padding([.top, .bottom], 10)
+                .padding(.leading, 20)
+            
+            ForEach(notes, id: \.self) { note in
+                Text(note.text ?? "missing note")
             }
+            .padding([.leading, .bottom], 20)
         }
         .padding(.trailing, 20)
         .padding(.leading, 20)
