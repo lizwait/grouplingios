@@ -23,8 +23,6 @@ struct NewGroupView: View {
     @State private var region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 39.099724, longitude: -94.578331), span: MKCoordinateSpan(latitudeDelta: 0.5, longitudeDelta: 0.5))
     @State private var searchPlaces = ""
     @State private var groupNotes = ""
-//    @State private var showingGroupNotes = false
-//    @State private var groupNoteArray:[String] = []
     @State private var showingAlert = false
     @State private var pin = 7
     @State private var text = ""
