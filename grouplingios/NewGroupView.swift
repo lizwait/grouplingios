@@ -32,7 +32,7 @@ struct NewGroupView: View {
         ScrollView {
             
             VStack(spacing: 16) {
-                Header()
+                Header(themeManager: themeManager)
                 groupInfoSection
                 memberInfoSection
                 placesInfoSection
@@ -147,9 +147,9 @@ struct NewGroupView: View {
             TextField("Search Places", text: $searchPlaces)
                 .padding([.leading, .trailing,], 20)
                 .padding(.bottom, 6)
-            
+    
             Map(coordinateRegion: $region)
-                .frame(width: 380, height: 250)
+                .frame(width: 400, height: 250)
             
             Divider()
             

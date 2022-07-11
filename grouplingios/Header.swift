@@ -9,7 +9,7 @@ import SwiftUI
 
 struct Header: View {
     
-    @StateObject var themeManager = ThemeManager()
+    @ObservedObject var themeManager: ThemeManager
     @State private var toggle = false
     
     var body: some View {
@@ -17,9 +17,13 @@ struct Header: View {
             Image.image.grouplinglogo
                 .resizable()
                 .frame(width: 200, height: 75)
-            
-            Toggle ("", isOn: $toggle)
-//                ForEach(0..<themeManager.themes.count)
+            HStack {
+                Spacer()
+                Image.image.mulleticon
+                    .resizable()
+                    .frame(width: 40, height: 40)
+                    .padding(.leading, 70)
+                Toggle ("", isOn: $toggle)
                 .onChange(of: toggle) { value in
                     if value == true {
                         themeManager.applyTheme(1)
@@ -27,20 +31,15 @@ struct Header: View {
                         themeManager.applyTheme(0)
                     }
                 }
-            HStack {
-                Spacer()
-                Image.image.mulleticon
-                    .resizable()
-                    .frame(width: 40, height: 40)
             }
         }
+        .padding([.trailing, .leading], 30)
     }
-    //    .padding([.trailing, .leading], 30)
 }
 
 
-struct Header_Previews: PreviewProvider {
-    static var previews: some View {
-        Header()
-    }
-}
+//struct Header_Previews: PreviewProvider {
+//    static var previews: some View {
+//        Header()
+//    }
+//}

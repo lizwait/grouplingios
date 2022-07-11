@@ -1,0 +1,6 @@
+framework module Pods_grouplingios_grouplingiosUITests {
+  umbrella header "Pods-grouplingios-grouplingiosUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
