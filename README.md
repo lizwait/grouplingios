@@ -1,7 +1,7 @@
 # grouplingios
 ## iOS Groupling app
 
-Groupling is an iOS application that is used to coordinate group trips. Organizing activities and keeping track of itineraries for a number of people can get a bit tedious. Having a webapp dedicated to this specific need will make this more streamlined and accessible. Groupling will have the ability to set up a group stay with reservation info, travel itineraries, local social spots, group outings, etc.
+Groupling is an iOS application that is used to coordinate group trips. Organizing activities and keeping track of itineraries for a number of people can get a bit tedious. Having an app dedicated to this specific need will make this more streamlined and accessible. Groupling will have the ability to set up a group stay with reservation info, travel itineraries, local social spots, group outings, etc.
 
 - **PIN Login** Users won't have to remember a username/password. A PIN will be shared with them to easily login.
 - **Database driven** Using Core Data, the app will capture user information and aggregate it in a useful manner.
