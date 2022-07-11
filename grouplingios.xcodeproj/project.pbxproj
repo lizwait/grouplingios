@@ -21,9 +21,8 @@
 		FC53E53B28677FAF00B05E46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC53E53A28677FAF00B05E46 /* Assets.xcassets */; };
 		FC53E53E28677FAF00B05E46 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC53E53D28677FAF00B05E46 /* Preview Assets.xcassets */; };
 		FC53E54828677FAF00B05E46 /* grouplingiosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC53E54728677FAF00B05E46 /* grouplingiosTests.swift */; };
-		FC53E55228677FAF00B05E46 /* grouplingiosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC53E55128677FAF00B05E46 /* grouplingiosUITests.swift */; };
-		FC53E55428677FAF00B05E46 /* grouplingiosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC53E55328677FAF00B05E46 /* grouplingiosUITestsLaunchTests.swift */; };
 		FCBCBEC72872A109006F458A /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBCBEC62872A109006F458A /* Header.swift */; };
+		FCF4196D287B6650003A3A2D /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF4196C287B6650003A3A2D /* ThemeManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,9 +66,8 @@
 		FC53E54328677FAF00B05E46 /* grouplingiosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = grouplingiosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC53E54728677FAF00B05E46 /* grouplingiosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = grouplingiosTests.swift; sourceTree = "<group>"; };
 		FC53E54D28677FAF00B05E46 /* grouplingiosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = grouplingiosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FC53E55128677FAF00B05E46 /* grouplingiosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = grouplingiosUITests.swift; sourceTree = "<group>"; };
-		FC53E55328677FAF00B05E46 /* grouplingiosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = grouplingiosUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		FCBCBEC62872A109006F458A /* Header.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
+		FCF4196C287B6650003A3A2D /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,7 +135,6 @@
 			children = (
 				FC53E53528677FAA00B05E46 /* grouplingios */,
 				FC53E54628677FAF00B05E46 /* grouplingiosTests */,
-				FC53E55028677FAF00B05E46 /* grouplingiosUITests */,
 				FC53E53428677FAA00B05E46 /* Products */,
 				C903019F52356EB386472470 /* Pods */,
 				3F2718E3E6E5DE7809744C1E /* Frameworks */,
@@ -157,6 +154,7 @@
 		FC53E53528677FAA00B05E46 /* grouplingios */ = {
 			isa = PBXGroup;
 			children = (
+				FCF4196C287B6650003A3A2D /* ThemeManager.swift */,
 				FC53E53628677FAA00B05E46 /* grouplingiosApp.swift */,
 				FCBCBEC62872A109006F458A /* Header.swift */,
 				FC0332E128693ED40007456D /* HomepageView.swift */,
@@ -185,15 +183,6 @@
 				FC53E54728677FAF00B05E46 /* grouplingiosTests.swift */,
 			);
 			path = grouplingiosTests;
-			sourceTree = "<group>";
-		};
-		FC53E55028677FAF00B05E46 /* grouplingiosUITests */ = {
-			isa = PBXGroup;
-			children = (
-				FC53E55128677FAF00B05E46 /* grouplingiosUITests.swift */,
-				FC53E55328677FAF00B05E46 /* grouplingiosUITestsLaunchTests.swift */,
-			);
-			path = grouplingiosUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -405,6 +394,7 @@
 				FCBCBEC72872A109006F458A /* Header.swift in Sources */,
 				FC4134C42876796F0042C60F /* CustomTextFieldStyle.swift in Sources */,
 				FC4134B628751EC70042C60F /* DataController.swift in Sources */,
+				FCF4196D287B6650003A3A2D /* ThemeManager.swift in Sources */,
 				FC53E53728677FAA00B05E46 /* grouplingiosApp.swift in Sources */,
 				FC4134B428751D770042C60F /* grouplingios.xcdatamodeld in Sources */,
 			);
@@ -422,8 +412,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC53E55428677FAF00B05E46 /* grouplingiosUITestsLaunchTests.swift in Sources */,
-				FC53E55228677FAF00B05E46 /* grouplingiosUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,11 +8,13 @@
 import SwiftUI
 
 struct HomepageView: View {
+    
+    @StateObject var themeManager = ThemeManager()
     @State private var toggle = false
     @State private var pinInput = ""
     var body: some View {
         ZStack {
-            Color.theme.background
+            themeManager.selectedTheme.background
                 .ignoresSafeArea()
             
             VStack {
@@ -24,13 +26,13 @@ struct HomepageView: View {
                             .frame(width: 40, height: 40)
                     }
                 }
-                .tint(Color.theme.accent)
+                .tint(themeManager.selectedTheme.accent)
                 .padding(.bottom, 20)
                 .padding(.trailing, 25)
                 VStack {
                     ZStack {
                         Rectangle()
-                            .fill(Color.theme.secondarybackground)
+                            .fill(themeManager.selectedTheme.secondarybackground)
                             .frame(width: 400, height: 350)
                         VStack {
                             Image.image.grouplinglogo
@@ -38,7 +40,7 @@ struct HomepageView: View {
                                 .frame(width: 350, height: 150)
                                 .padding(.top, -50)
                             TextField("Group PIN", text: $pinInput)
-                                .background(Color.theme.bright)
+                                .background(themeManager.selectedTheme.bright)
                                 .padding(.top, 40)
                                 .padding(.trailing, 120)
                                 .padding(.leading, 120)
@@ -48,9 +50,9 @@ struct HomepageView: View {
                                 label: {
                                     Text("go to group")
                                         .padding(10)
-                                        .background(Color.theme.accent)
+                                        .background(themeManager.selectedTheme.accent)
                                         .font(.system(size: 15, weight: .semibold, design: .rounded))
-                                        .foregroundColor(Color.theme.bright)
+                                        .foregroundColor(themeManager.selectedTheme.bright)
                                         .cornerRadius(6)
                                         .padding(.top, 10)
                                 }
@@ -60,7 +62,7 @@ struct HomepageView: View {
                     
                     ZStack {
                         Rectangle()
-                            .fill(Color.theme.bright)
+                            .fill(themeManager.selectedTheme.bright)
                             .frame(width: 400, height: 200)
                         VStack(spacing: 30) {
                             Text("New to Groupling?")
@@ -70,9 +72,9 @@ struct HomepageView: View {
                         label: {
                             Text("create group")
                                 .padding(10)
-                                .background(Color.theme.accent)
+                                .background(themeManager.selectedTheme.accent)
                                 .font(.system(size: 15, weight: .semibold, design: .rounded))
-                                .foregroundColor(Color.theme.bright)
+                                .foregroundColor(themeManager.selectedTheme.bright)
                                 .cornerRadius(6)
                         }
                             

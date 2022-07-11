@@ -8,30 +8,34 @@
 import Foundation
 import SwiftUI
 
-extension Color {
+protocol Theme {
+    var accent: Color {get set}
+    var primarytext: Color {get set}
+    var background: Color {get set}
+    var secondarybackground: Color {get set}
+    var bright: Color {get set}
+    var optional: Color {get set}
+}
+
+struct DefaultColorTheme: Theme {
     
-    static let theme = DefaultColorTheme()
+    var accent = Color("AccentColor")
+    var primarytext = Color("Text")
+    var background = Color("Background")
+    var secondarybackground = Color("Grey")
+    var bright = Color("White")
+    var optional = Color("Blue")
     
 }
 
-struct DefaultColorTheme {
+struct PartyColorTheme: Theme {
     
-    let accent = Color("AccentColor")
-    let primarytext = Color("Text")
-    let background = Color("Background")
-    let secondarybackground = Color("Grey")
-    let bright = Color("White")
-    let optional = Color("Blue")
+    var accent = Color("PartyAccentColor")
+    var primarytext = Color("PartyText")
+    var background = Color("PartyBackground")
+    var secondarybackground = Color("PartyPurple")
+    var bright = Color ("PartyGold")
+    var optional = Color("Blue")
     
 }
 
-struct PartyColorTheme {
-    
-    let accent = Color("PartyAccentColor")
-    let primarytext = Color("PartyText")
-    let background = Color("PartyBackground")
-    let secondarybackground = Color("PartyPurple")
-    let bright = Color ("PartyGold")
-    let optional = Color("Blue")
-    
-}

@@ -13,6 +13,7 @@ struct NewGroupView: View {
     @Environment(\.managedObjectContext) var moc
     @FetchRequest(sortDescriptors: []) var notes: FetchedResults<GroupNote>
     
+    @StateObject var themeManager = ThemeManager()
     @State private var groupTitle = ""
     @State private var groupDescription = ""
     @State private var firstName = ""
@@ -31,7 +32,7 @@ struct NewGroupView: View {
         ScrollView {
             
             VStack(spacing: 16) {
-                Header()
+                Header(themeManager: themeManager)
                 groupInfoSection
                 memberInfoSection
                 placesInfoSection
@@ -41,7 +42,7 @@ struct NewGroupView: View {
             }
             .textFieldStyle(CustomTextFieldStyle())
         }
-        .background(Color.theme.background.ignoresSafeArea())
+        .background(themeManager.selectedTheme.background.ignoresSafeArea())
         .alert(isPresented: $showingAlert) {
             Alert(
                 title: Text("Group Note field is empty"),
@@ -73,7 +74,7 @@ struct NewGroupView: View {
         .padding()
         .cornerRadius(6)
         .font(.system(size: 15, weight: .semibold, design: .rounded))
-        .background(Color.theme.secondarybackground)
+        .background(themeManager.selectedTheme.secondarybackground)
         
     }
     
@@ -113,9 +114,9 @@ struct NewGroupView: View {
                 } label: {
                     Text("add member to group")
                         .padding(10)
-                        .background(Color.theme.accent)
+                        .background(themeManager.selectedTheme.accent)
                         .font(.system(size: 15, weight: .semibold, design: .rounded))
-                        .foregroundColor(Color.theme.bright)
+                        .foregroundColor(themeManager.selectedTheme.bright)
                         .cornerRadius(6)
                 }
                 
@@ -132,7 +133,7 @@ struct NewGroupView: View {
         .cornerRadius(6)
         .font(.system(size: 15, weight: .semibold, design: .rounded))
         .padding()
-        .background(Color.theme.secondarybackground)
+        .background(themeManager.selectedTheme.secondarybackground)
     }
     
     @ViewBuilder
@@ -146,9 +147,9 @@ struct NewGroupView: View {
             TextField("Search Places", text: $searchPlaces)
                 .padding([.leading, .trailing,], 20)
                 .padding(.bottom, 6)
-            
+    
             Map(coordinateRegion: $region)
-                .frame(width: 380, height: 250)
+                .frame(width: 400, height: 250)
             
             Divider()
             
@@ -160,7 +161,7 @@ struct NewGroupView: View {
         .padding([.leading, .trailing], 20)
         .cornerRadius(6)
         .font(.system(size: 15, weight: .semibold, design: .rounded))
-        .background(Color.theme.secondarybackground)
+        .background(themeManager.selectedTheme.secondarybackground)
     }
     
     @ViewBuilder
@@ -190,9 +191,9 @@ struct NewGroupView: View {
                 } label: {
                     Text("add note")
                         .padding(10)
-                        .background(Color.theme.accent)
+                        .background(themeManager.selectedTheme.accent)
                         .font(.system(size: 15, weight: .semibold, design: .rounded))
-                        .foregroundColor(Color.theme.bright)
+                        .foregroundColor(themeManager.selectedTheme.bright)
                         .cornerRadius(6)
                 }
                 
@@ -216,7 +217,7 @@ struct NewGroupView: View {
         .padding(.leading, 20)
         .cornerRadius(6)
         .font(.system(size: 15, weight: .semibold, design: .rounded))
-        .background(Color.theme.secondarybackground)
+        .background(themeManager.selectedTheme.secondarybackground)
     }
     
     @ViewBuilder
@@ -243,7 +244,7 @@ struct NewGroupView: View {
                 }
             }
             .padding(.bottom, 30)
-            .background(Color.theme.secondarybackground)
+            .background(themeManager.selectedTheme.secondarybackground)
         }
     }
     
@@ -255,13 +256,13 @@ struct NewGroupView: View {
                 } label: {
                     Text("Save Group")
                         .padding(10)
-                        .background(Color.theme.accent)
+                        .background(themeManager.selectedTheme.accent)
                         .font(.system(size: 30, weight: .semibold, design: .rounded))
                         .foregroundColor(Color.white)
                         .cornerRadius(6)
                 }
             }
-            .background(Color.theme.secondarybackground)
+            .background(themeManager.selectedTheme.secondarybackground)
         }
     }
     
