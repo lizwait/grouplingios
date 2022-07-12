@@ -31,15 +31,10 @@ struct Header: View {
                         themeManager.applyTheme(0)
                     }
                 }
+                .tint(themeManager.selectedTheme.accent)
             }
         }
         .padding([.trailing, .leading], 30)
     }
 }
 
-
-//struct Header_Previews: PreviewProvider {
-//    static var previews: some View {
-//        Header()
-//    }
-//}
