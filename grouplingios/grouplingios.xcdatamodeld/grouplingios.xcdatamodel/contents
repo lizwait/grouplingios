@@ -6,11 +6,19 @@
         <attribute name="title" optional="YES" attributeType="String"/>
         <relationship name="groupnote" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="GroupNote"/>
     </entity>
+    <entity name="GroupMember" representedClassName="GroupMember" syncable="YES" codeGenerationType="class">
+        <attribute name="first_name" optional="YES" attributeType="String"/>
+        <attribute name="last_name" optional="YES" attributeType="String"/>
+        <attribute name="member_email" optional="YES" attributeType="String"/>
+        <attribute name="member_notes" optional="YES" attributeType="String"/>
+        <attribute name="member_phone" optional="YES" attributeType="String"/>
+    </entity>
     <entity name="GroupNote" representedClassName="GroupNote" syncable="YES" codeGenerationType="class">
         <attribute name="text" optional="YES" attributeType="String"/>
     </entity>
     <elements>
         <element name="Group" positionX="-63" positionY="-18" width="128" height="89"/>
         <element name="GroupNote" positionX="-54" positionY="18" width="128" height="44"/>
+        <element name="GroupMember" positionX="-54" positionY="18" width="128" height="104"/>
     </elements>
 </model>

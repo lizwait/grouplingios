@@ -12,6 +12,7 @@ import CoreData
 struct NewGroupView: View {
     @Environment(\.managedObjectContext) var moc
     @FetchRequest(sortDescriptors: []) var notes: FetchedResults<GroupNote>
+    @FetchRequest(sortDescriptors: []) var memberInfo: FetchedResults<GroupMember>
     
     @StateObject var themeManager = ThemeManager()
     @State private var groupTitle = ""
@@ -79,23 +80,30 @@ struct NewGroupView: View {
     }
     
     @ViewBuilder
+    var memberFormView: some View {
+        Text("Members")
+            .font(.system(size: 20, weight: .bold, design: .rounded))
+            .padding(.leading, 20)
+        
+        TextField("First Name", text: $firstName)
+            .padding([.leading, .trailing], 20)
+        
+        TextField("Last Name", text: $lastName)
+            .padding([.leading, .trailing], 20)
+        
+        TextField("Phone Number", text: $memberPhone)
+            .padding([.leading, .trailing], 20)
+        
+        TextField("Email", text: $memberEmail)
+        .padding([.leading, .trailing,], 20)
+    }
+    
+    
+    @ViewBuilder
     var memberInfoSection: some View {
         VStack(alignment: .leading, spacing:10) {
-            Text("Members")
-                .font(.system(size: 20, weight: .bold, design: .rounded))
-                .padding(.leading, 20)
             
-            TextField("First Name", text: $firstName)
-                .padding([.leading, .trailing], 20)
-            
-            TextField("Last Name", text: $lastName)
-                .padding([.leading, .trailing], 20)
-            
-            TextField("Phone Number", text: $memberPhone)
-                .padding([.leading, .trailing], 20)
-            
-            TextField("Email", text: $memberEmail)
-                .padding([.leading, .trailing,], 20)
+            memberFormView
             
             Text("Member Specific Notes")
                 .padding([.top, .leading], 20)
@@ -111,6 +119,21 @@ struct NewGroupView: View {
                 Spacer()
                 
                 Button {
+                    if $firstName.wrappedValue == "" ||
+                        $lastName.wrappedValue == "" ||
+                        $memberPhone.wrappedValue == "" ||
+                        $memberEmail.wrappedValue == ""
+                    {
+                        showingAlert = true
+                    } else {
+                        let newGroupMember = GroupMember(context: moc)
+                        newGroupMember.first_name = $firstName.wrappedValue
+                        newGroupMember.last_name = $lastName.wrappedValue
+                        newGroupMember.member_phone = $memberPhone.wrappedValue
+                        newGroupMember.member_email = $memberEmail.wrappedValue
+                        
+                        try? moc.save()
+                    }
                 } label: {
                     Text("add member to group")
                         .padding(10)
@@ -129,6 +152,14 @@ struct NewGroupView: View {
                 .font(.system(size: 20, weight: .bold, design: .rounded))
                 .padding(.top, 10)
                 .padding([.leading, .bottom], 20)
+            
+            ForEach(memberInfo, id: \.self) { groupMember in
+                Text(groupMember.first_name ?? "missing first name")
+                Text(groupMember.last_name ?? "missing last name")
+                Text(groupMember.member_phone ?? "missing phone number")
+                Text(groupMember.member_email ?? "missing email")
+            }
+            
         }
         .cornerRadius(6)
         .font(.system(size: 15, weight: .semibold, design: .rounded))
@@ -147,7 +178,7 @@ struct NewGroupView: View {
             TextField("Search Places", text: $searchPlaces)
                 .padding([.leading, .trailing,], 20)
                 .padding(.bottom, 6)
-    
+            
             Map(coordinateRegion: $region)
                 .frame(width: 400, height: 250)
             
