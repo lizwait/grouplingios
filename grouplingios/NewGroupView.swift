@@ -11,10 +11,14 @@ import CoreData
 
 struct NewGroupView: View {
     @Environment(\.managedObjectContext) var moc
-    @FetchRequest(sortDescriptors: []) var notes: FetchedResults<GroupNote>
+    
+    @FetchRequest(sortDescriptors: []) var group: FetchedResults<Group>
     @FetchRequest(sortDescriptors: []) var memberInfo: FetchedResults<GroupMember>
+    @FetchRequest(sortDescriptors: []) var notes: FetchedResults<GroupNote>
     
     @StateObject var themeManager = ThemeManager()
+    
+    @State private var isValid = true
     @State private var groupTitle = ""
     @State private var groupDescription = ""
     @State private var firstName = ""
@@ -46,8 +50,8 @@ struct NewGroupView: View {
         .background(themeManager.selectedTheme.background.ignoresSafeArea())
         .alert(isPresented: $showingAlert) {
             Alert(
-                title: Text("Group Note field is empty"),
-                message: Text("Please add a Group Note"),
+                title: Text("Please make sure all required fields are completed."),
+                message: Text("Double-check your entry, please!"),
                 dismissButton: .default(Text("Got it!"))
             )
         }
@@ -76,7 +80,6 @@ struct NewGroupView: View {
         .cornerRadius(6)
         .font(.system(size: 15, weight: .semibold, design: .rounded))
         .background(themeManager.selectedTheme.secondarybackground)
-        
     }
     
     @ViewBuilder
@@ -92,10 +95,11 @@ struct NewGroupView: View {
             .padding([.leading, .trailing], 20)
         
         TextField("Phone Number", text: $memberPhone)
+            .keyboardType(.decimalPad)
             .padding([.leading, .trailing], 20)
         
         TextField("Email", text: $memberEmail)
-        .padding([.leading, .trailing,], 20)
+            .padding([.leading, .trailing,], 20)
     }
     
     
@@ -122,7 +126,8 @@ struct NewGroupView: View {
                     if $firstName.wrappedValue == "" ||
                         $lastName.wrappedValue == "" ||
                         $memberPhone.wrappedValue == "" ||
-                        $memberEmail.wrappedValue == ""
+                        $memberEmail.wrappedValue == "" ||
+                        $memberNotes.wrappedValue == ""
                     {
                         showingAlert = true
                     } else {
@@ -131,9 +136,13 @@ struct NewGroupView: View {
                         newGroupMember.last_name = $lastName.wrappedValue
                         newGroupMember.member_phone = $memberPhone.wrappedValue
                         newGroupMember.member_email = $memberEmail.wrappedValue
+                        newGroupMember.member_notes = $memberNotes.wrappedValue
                         
                         try? moc.save()
                     }
+                    //Why is this not working??
+                    self.groupNotes = ""
+                    UIApplication.shared.endEditing()
                 } label: {
                     Text("add member to group")
                         .padding(10)
@@ -154,12 +163,17 @@ struct NewGroupView: View {
                 .padding([.leading, .bottom], 20)
             
             ForEach(memberInfo, id: \.self) { groupMember in
-                Text(groupMember.first_name ?? "missing first name")
-                Text(groupMember.last_name ?? "missing last name")
+                HStack {
+                    Text(groupMember.first_name ?? "missing first name")
+                    Text(groupMember.last_name ?? "missing last name")
+                        .padding(.leading, -3)
+                }
                 Text(groupMember.member_phone ?? "missing phone number")
                 Text(groupMember.member_email ?? "missing email")
+                Text(groupMember.member_notes ?? "")
+                    .padding(.bottom, 8)
             }
-            
+            .padding(.leading, 20)
         }
         .cornerRadius(6)
         .font(.system(size: 15, weight: .semibold, design: .rounded))
@@ -219,6 +233,8 @@ struct NewGroupView: View {
                         
                         try? moc.save()
                     }
+                    self.groupNotes = ""
+                    UIApplication.shared.endEditing()
                 } label: {
                     Text("add note")
                         .padding(10)
@@ -284,6 +300,17 @@ struct NewGroupView: View {
         ZStack {
             VStack {
                 Button {
+                    if $groupTitle.wrappedValue == "" ||
+                        $groupDescription.wrappedValue == ""
+                    {
+                        showingAlert = true
+                    } else {
+                        let newGroup = Group(context: moc)
+                        newGroup.title = $groupTitle.wrappedValue
+                        newGroup.groupdescription = $groupDescription.wrappedValue
+                        
+                        try? moc.save()
+                    }
                 } label: {
                     Text("Save Group")
                         .padding(10)
@@ -298,10 +325,18 @@ struct NewGroupView: View {
     }
     
     
-    
     struct NewGroupView_Previews: PreviewProvider {
         static var previews: some View {
             NewGroupView()
         }
     }
 }
+//hide keyboard after input
+extension UIApplication {
+    func endEditing() {
+        sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+    }
+}
+
+
+
